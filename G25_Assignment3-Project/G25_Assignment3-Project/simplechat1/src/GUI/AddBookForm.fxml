@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.AddBookController">
+   <children>
+      <Label layoutX="10.0" layoutY="85.0" text="Catalog number :">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="catalogNumberTextField" alignment="TOP_CENTER" layoutX="173.0" layoutY="78.0" prefHeight="32.0" prefWidth="176.0" promptText="e.g. 17">
+         <padding>
+            <Insets top="15.0" />
+         </padding>
+      </TextField>
+      <Label layoutX="10.0" layoutY="240.0" text="Author/s :">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bookNameTextField" alignment="TOP_CENTER" layoutX="173.0" layoutY="128.0" prefHeight="32.0" prefWidth="176.0" promptText="e.g. JAVA">
+         <padding>
+            <Insets top="15.0" />
+         </padding>
+      </TextField>
+      <Label layoutX="10.0" layoutY="135.0" text="Book name :">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="AuthorTextField" alignment="TOP_CENTER" layoutX="173.0" layoutY="228.0" prefHeight="32.0" prefWidth="176.0" promptText="e.g. J.K. Rowling ">
+         <padding>
+            <Insets top="15.0" />
+         </padding>
+      </TextField>
+      <Label layoutX="10.0" layoutY="187.0" text="Edition number :">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="EditionNumberTextField" alignment="TOP_CENTER" layoutX="173.0" layoutY="178.0" prefHeight="32.0" prefWidth="176.0" promptText="e.g. 2">
+         <padding>
+            <Insets top="15.0" />
+         </padding>
+      </TextField>
+      <Label layoutX="10.0" layoutY="284.0" text="Printing date :">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="359.0" layoutY="85.0" text="Subject :">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="5.0" layoutY="335.0" prefHeight="21.0" prefWidth="143.0" style="-fx-background-color: white;" />
+      <TextField fx:id="subjectTextField" alignment="TOP_CENTER" layoutX="526.0" layoutY="78.0" prefHeight="32.0" prefWidth="184.0" promptText="e.g. CS">
+         <padding>
+            <Insets top="15.0" />
+         </padding>
+      </TextField>
+      <TextField fx:id="DescriptionTextField" alignment="TOP_LEFT" layoutX="526.0" layoutY="126.0" prefHeight="85.0" prefWidth="184.0" promptText="e.g. Java for dummies">
+         <padding>
+            <Insets top="15.0" />
+         </padding>
+      </TextField>
+      <Label layoutX="359.0" layoutY="335.0" prefHeight="21.0" prefWidth="163.0" style="-fx-background-color: white;" />
+      <Label layoutX="14.0" layoutY="395.0" prefHeight="21.0" prefWidth="163.0" style="-fx-background-color: white;" />
+      <Label layoutX="359.0" layoutY="135.0" text="Description :">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="334.0" text="Purchase date :">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ShelfNumberTextField" alignment="TOP_CENTER" layoutX="526.0" layoutY="228.0" prefHeight="32.0" prefWidth="184.0" promptText="e.g. 14">
+         <padding>
+            <Insets top="15.0" />
+         </padding>
+      </TextField>
+      <Label layoutX="359.0" layoutY="238.0" text="Shelf number :">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="335.0" layoutY="375.0" mnemonicParsing="false" onAction="#submitHandler" prefHeight="40.0" prefWidth="111.0" style="-fx-background-color: #0006a8;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="printingDateDatePicker" layoutX="173.0" layoutY="278.0" prefHeight="32.0" prefWidth="178.0" promptText="e.g. 2003-10-26" />
+      <DatePicker fx:id="purchaseDateDatePicker" layoutX="173.0" layoutY="328.0" prefHeight="32.0" prefWidth="179.0" promptText="e.g. 2008-04-09" />
+      <Button layoutX="525.0" layoutY="332.0" mnemonicParsing="false" onAction="#tableOfContent" prefHeight="32.0" prefWidth="186.0" style="-fx-background-color: #d6d6d6;" text="Choose file" textFill="#0009ab">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="367.0" layoutY="329.0" prefHeight="32.0" prefWidth="174.0" text="Table of content :">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="358.0" layoutY="284.0" prefHeight="21.0" prefWidth="176.0" text="Number of copies : ">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NumberOfCopiesTextField" alignment="TOP_CENTER" layoutX="526.0" layoutY="277.0" prefHeight="36.0" prefWidth="184.0" promptText="e.g. 46" />
+      <Label layoutX="338.0" layoutY="87.0" text="*" textFill="#e40000" />
+      <Label layoutX="338.0" layoutY="137.0" text="*" textFill="#e40000" />
+      <Label layoutX="338.0" layoutY="188.0" text="*" textFill="#e40000" />
+      <Label layoutX="336.0" layoutY="238.0" text="*" textFill="#e40000" />
+      <Label layoutX="310.0" layoutY="287.0" text="*" textFill="#e40000" />
+      <Label layoutX="310.0" layoutY="337.0" text="*" textFill="#e40000" />
+      <Label layoutX="701.0" layoutY="87.0" text="*" textFill="#e40000" />
+      <Label layoutX="701.0" layoutY="168.0" text="*" textFill="#e40000" />
+      <Label layoutX="701.0" layoutY="240.0" text="*" textFill="#e40000" />
+      <Label layoutX="701.0" layoutY="287.0" text="*" textFill="#e40000" />
+      <Label layoutX="697.0" layoutY="338.0" text="*" textFill="#e40000" />
+      <Label layoutX="18.0" layoutY="395.0" text="* Indicates required" textFill="#e40000" />
+      <Label contentDisplay="RIGHT" layoutX="278.0" layoutY="15.0" prefHeight="50.0" prefWidth="228.0" text="Add Book" wrapText="true">
+         <font>
+            <Font name="Showcard Gothic" size="43.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="RIGHT" layoutX="282.0" layoutY="15.0" prefHeight="45.0" prefWidth="207.0" text="Add Book" textFill="#0006a8" wrapText="true">
+         <font>
+            <Font name="Showcard Gothic" size="41.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

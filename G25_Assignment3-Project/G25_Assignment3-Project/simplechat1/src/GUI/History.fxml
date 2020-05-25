@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.HistoryController">
+   <children>
+      <Label alignment="CENTER" layoutX="172.0" layoutY="7.0" prefHeight="64.0" prefWidth="169.0" text="HISTORY OF " textAlignment="CENTER" textFill="#ffb800">
+         <font>
+            <Font name="Showcard Gothic" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="318.0" layoutY="7.0" prefHeight="64.0" prefWidth="122.0" text="ACTIONS" textAlignment="CENTER" textFill="#00016e">
+         <font>
+            <Font name="Showcard Gothic" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="historyTable" layoutX="75.0" layoutY="71.0" prefHeight="305.0" prefWidth="450.0" style="-fx-background-color: #b2dcff;">
+        <columns>
+          <TableColumn fx:id="bookName" prefWidth="150.0" text="Book name" />
+          <TableColumn fx:id="action" prefWidth="150.0" text="Action" />
+            <TableColumn fx:id="actionDate" prefWidth="150.0" text="Action Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

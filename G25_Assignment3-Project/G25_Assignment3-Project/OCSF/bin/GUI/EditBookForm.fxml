@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="685.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.EditBookController">
+   <children>
+      <Label layoutX="21.0" layoutY="424.0" prefHeight="40.0" prefWidth="170.0" text="Table of content">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="383.0" layoutY="352.0" text="Shelf number :">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="379.0" layoutY="48.0" text="Book name :">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="383.0" layoutY="276.0" text="Purchase date :">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="276.0" text="Description :">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="379.0" layoutY="195.0" text="Subject :">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="196.0" text="Printing date :">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="379.0" layoutY="118.0" text="Edition number :">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="120.0" text="Author/s :">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bookNameTextField" layoutX="376.0" layoutY="75.0" prefHeight="14.0" prefWidth="280.0" promptText="e.g. JAVA For Dummies">
+         <padding>
+            <Insets top="15.0" />
+         </padding>
+      </TextField>
+      <TextField fx:id="AuthorTextField" layoutX="21.0" layoutY="141.0" prefHeight="32.0" prefWidth="280.0" promptText="e.g. Stephen King">
+         <padding>
+            <Insets top="15.0" />
+         </padding>
+      </TextField>
+      <TextField fx:id="subjectTextField" layoutX="376.0" layoutY="222.0" prefHeight="28.0" prefWidth="280.0" promptText="e.g. CS">
+         <padding>
+            <Insets top="15.0" />
+         </padding>
+      </TextField>
+      <TextField fx:id="EditionNumberTextField" layoutX="376.0" layoutY="141.0" prefHeight="28.0" prefWidth="280.0" promptText="e.g. 3">
+         <padding>
+            <Insets top="15.0" />
+         </padding>
+      </TextField>
+      <Button layoutX="287.0" layoutY="511.0" mnemonicParsing="false" onAction="#submitHandler" prefHeight="40.0" prefWidth="111.0" style="-fx-background-color: #00016e;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="catalogNumberTextField" layoutX="21.0" layoutY="75.0" prefHeight="32.0" prefWidth="280.0" promptText="e.g. 17">
+         <padding>
+            <Insets top="15.0" />
+         </padding>
+      </TextField>
+      <Label layoutX="26.0" layoutY="48.0" text="Catalog number :">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="DescriptionTextField" layoutX="21.0" layoutY="305.0" prefHeight="128.0" prefWidth="280.0" promptText="e.g. Java Programming. This book is an introduction to programming in Oracle's Java™ programming language, a widely used programming language and software platform." />
+      <Label layoutX="383.0" layoutY="431.0" text="Number of copies :">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NumberOfCopiesTextField1" layoutX="378.0" layoutY="460.0" prefHeight="28.0" prefWidth="280.0" promptText="e.g. 46">
+         <padding>
+            <Insets top="15.0" />
+         </padding>
+      </TextField>
+      <Button layoutX="26.0" layoutY="465.0" mnemonicParsing="false" onAction="#tableOfContent" prefHeight="31.0" prefWidth="272.0" style="-fx-background-color: #b8b8b8;" text="Choose  File" textFill="#00016e">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font></Button>
+      <DatePicker fx:id="purchaseDateDatePicker" layoutX="376.0" layoutY="305.0" prefHeight="32.0" prefWidth="280.0" promptText="e.g. 2008-04-09" />
+      <DatePicker fx:id="printingDateDatePicker" layoutX="26.0" layoutY="226.0" prefHeight="32.0" prefWidth="272.0" promptText="e.g. 2003-04-09" />
+      <TextField fx:id="ShelfNumberTextField" layoutX="376.0" layoutY="381.0" prefHeight="14.0" prefWidth="280.0" promptText="e.g. 28">
+         <padding>
+            <Insets top="15.0" />
+         </padding>
+      </TextField>
+      <Label layoutX="253.0" layoutY="14.0" text="EDIT BOOK " textFill="#00016e">
+         <font>
+            <Font name="Showcard Gothic" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="284.0" layoutY="83.0" text="*" textFill="RED" />
+      <Label layoutX="284.0" layoutY="149.0" text="*" textFill="RED" />
+      <Label layoutX="253.0" layoutY="232.0" text="*" textFill="RED" />
+      <Label layoutX="284.0" layoutY="363.0" text="*" textFill="RED" />
+      <Label layoutX="284.0" layoutY="470.0" text="*" textFill="RED" />
+      <Label layoutX="642.0" layoutY="470.0" text="*" textFill="RED" />
+      <Label layoutX="641.0" layoutY="389.0" text="*" textFill="RED" />
+      <Label layoutX="611.0" layoutY="311.0" text="*" textFill="RED" />
+      <Label layoutX="645.0" layoutY="232.0" text="*" textFill="RED" />
+      <Label layoutX="642.0" layoutY="149.0" text="*" textFill="RED" />
+      <Label layoutX="639.0" layoutY="83.0" text="*" textFill="RED" />
+      <Label layoutX="538.0" layoutY="14.0" text="*:Indicates required " textFill="RED" />
+   </children>
+</AnchorPane>

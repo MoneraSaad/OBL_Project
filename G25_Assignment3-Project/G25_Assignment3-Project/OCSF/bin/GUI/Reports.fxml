@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="452.0" prefWidth="583.0" styleClass="bodybg" stylesheets="@MainBackground.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.RequestReportsController">
+   <children>
+      <ImageView fitHeight="56.0" fitWidth="60.0" layoutX="6.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/clipboard.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="315.0" layoutY="122.0" prefHeight="222.0" prefWidth="236.0" spacing="30.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#loanReportRequest" prefHeight="42.0" prefWidth="232.0" style="-fx-background-color: grey;" text="Loan Report" textFill="#ffcc00">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#lateReturnReportRequest" prefHeight="42.0" prefWidth="232.0" style="-fx-background-color: grey;" text="Report of late in return" textFill="#ffcc00">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#activityReportRequest" prefHeight="42.0" prefWidth="232.0" style="-fx-background-color: grey;" text="Activity Report" textFill="#ffcc00">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="64.0" layoutY="189.0" prefHeight="57.0" prefWidth="232.0" text="Reports">
+         <font>
+            <Font name="Showcard Gothic" size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="190.0" prefHeight="56.0" prefWidth="236.0" text="Reports" textFill="#ffcc00">
+         <font>
+            <Font name="Showcard Gothic" size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

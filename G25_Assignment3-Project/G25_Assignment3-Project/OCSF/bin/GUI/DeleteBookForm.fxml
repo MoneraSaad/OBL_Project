@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.DeleteBookController">
+   <children>
+      <Label layoutX="113.0" layoutY="100.0" prefHeight="15.0" prefWidth="129.0" text="Catalog Number :">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="catalogNumberTextField" layoutX="251.0" layoutY="92.0" promptText="e.g. 500" />
+      <Button layoutX="286.0" layoutY="146.0" mnemonicParsing="false" onAction="#submitHandler" prefHeight="26.0" prefWidth="118.0" text="Delete Book" />
+      <Label layoutX="234.0" layoutY="35.0" text="DELETE BOOK" textFill="#1e008f">
+         <font>
+            <Font name="Showcard Gothic" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="422.0" layoutY="98.0" text="*" textFill="RED" />
+      <Label layoutX="470.0" layoutY="4.0" text="* Indicates required" textFill="RED" />
+   </children>
+</AnchorPane>

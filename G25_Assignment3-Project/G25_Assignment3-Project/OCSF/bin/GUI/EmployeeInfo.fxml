@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="409.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.EmployeeInfoController">
+   <children>
+      <TableView fx:id="EmployeeTable" layoutX="28.0" layoutY="26.0" prefHeight="358.0" prefWidth="626.0">
+         <columns>
+            <TableColumn fx:id="EmployeeID" prefWidth="75.0" style="-fx-background-color: #eeb700;" text="EmployeeID" />
+            <TableColumn fx:id="EmployeeName" prefWidth="124.0" style="-fx-background-color: #eeb700;" text="EmployeeName" />
+            <TableColumn fx:id="Password" prefWidth="84.0" style="-fx-background-color: #eeb700;" text="Password" />
+            <TableColumn fx:id="Email" prefWidth="75.0" style="-fx-background-color: #eeb700;" text="Email" />
+            <TableColumn fx:id="PhoneNumber" prefWidth="111.0" style="-fx-background-color: #eeb700;" text="PhoneNumber" />
+            <TableColumn fx:id="Status" prefWidth="97.0" style="-fx-background-color: #eeb700;" text="Status" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

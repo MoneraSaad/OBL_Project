@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.LibrarianHomeController">
+   <children>
+      <ImageView fitHeight="48.0" fitWidth="431.0" layoutX="430.0" pickOnBounds="true" preserveRatio="true" />
+      <VBox layoutY="48.0" prefHeight="446.0" prefWidth="707.0" style="-fx-background-color: white;" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="48.0">
+         <children>
+            <HBox prefHeight="65.0" prefWidth="636.0" style="-fx-background-color: #5c5c8a;">
+               <children>
+                  <HBox prefHeight="65.0" prefWidth="525.0">
+                     <children>
+                        <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#homeHandler" prefHeight="64.0" prefWidth="66.0" style="-fx-background-color: #5c5c8a; -fx-border-color: #52527a;" text="Home" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="librarianName" prefHeight="64.0" prefWidth="81.0" style="-fx-border-color: #52527a;">
+                           <HBox.margin>
+                              <Insets left="366.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Button fx:id="login" mnemonicParsing="false" onAction="#singinHandler" prefHeight="64.0" prefWidth="107.0" style="-fx-background-color: #5c5c8a; -fx-border-color: #52527a;" text="sign in" textAlignment="CENTER" textFill="#9fd9ff" visible="false" wrapText="true">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <ComboBox fx:id="comboBoxMenu" prefHeight="67.0" prefWidth="115.0" promptText="Menu" style="-fx-background-color: #5c5c8a; -fx-border-color: #52527a;" />
+               </children>
+            </HBox>
+            <ButtonBar prefHeight="58.0" prefWidth="636.0" style="-fx-background-color: #7575a3;">
+               <buttons>
+                  <HBox alignment="CENTER_LEFT" prefHeight="73.0" prefWidth="610.0">
+                     <children>
+                        <ComboBox fx:id="comboBoxSearch" prefHeight="38.0" prefWidth="135.0" promptText="Browse by " />
+                        <TextField fx:id="enterTerm" prefHeight="36.0" prefWidth="336.0" promptText="Enter term" />
+                        <Button blendMode="MULTIPLY" mnemonicParsing="false" onAction="#SearchHandler" prefHeight="37.0" prefWidth="79.0" style="-fx-background-color: #7575a3;" text="Search" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+               </buttons>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets bottom="5.0" top="5.0" />
+               </opaqueInsets>
+            </ButtonBar>
+            <AnchorPane fx:id="MainInsideAnchorePane" prefHeight="319.0" prefWidth="724.0">
+               <children>
+                  <FlowPane fx:id="UserAnchorPane" layoutX="-6.0" layoutY="1.0" prefHeight="319.0" prefWidth="714.0" />
+                  <AnchorPane layoutX="149.0" layoutY="23.0" prefHeight="294.0" prefWidth="421.0" style="-fx-background-color: #5c5c8a;">
+                     <children>
+                        <Button layoutX="139.0" layoutY="220.0" mnemonicParsing="false" onAction="#RegisterRequestHandler" text="Register Requests">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="157.0" layoutY="56.0" mnemonicParsing="false" onAction="#BorrowFormHandler" text="Borrow Form">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Button>
+                        <Button layoutX="160.0" layoutY="14.0" mnemonicParsing="false" onAction="#ReturnBookHandler" text="Retrun Book">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="151.0" layoutY="141.0" mnemonicParsing="false" onAction="#AddNewBookHandler" text="Add New Book">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="152.0" layoutY="98.0" mnemonicParsing="false" onAction="#EditDeadlinesHandler" text="Edit Deadlines">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="150.0" layoutY="182.0" mnemonicParsing="false" onAction="#ViewAllBooksHandler" text="View All Books">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="101.0" layoutY="260.0" mnemonicParsing="false" onAction="#EditReadersPersonalDetailsHandler" text="Edit Readers Personal Details">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

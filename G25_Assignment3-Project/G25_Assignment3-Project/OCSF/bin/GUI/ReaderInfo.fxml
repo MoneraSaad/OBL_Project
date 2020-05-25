@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="440.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.ReaderInfoController">
+   <children>
+      <TableView fx:id="ReaderTable" layoutX="32.0" layoutY="41.0" prefHeight="358.0" prefWidth="626.0" style="-fx-background-color: #b2dcff;">
+        <columns>
+          <TableColumn fx:id="ReaderID" prefWidth="75.0" text="ReaderID" />
+            <TableColumn fx:id="ReaderName" prefWidth="75.0" text="ReaderName" />
+            <TableColumn fx:id="Password" prefWidth="75.0" text="Password" />
+            <TableColumn fx:id="Email" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="PhoneNumber" prefWidth="108.0" text="PhoneNumber" />
+            <TableColumn fx:id="Status" prefWidth="53.0" text="Status" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>
