@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="src" path="OCSF/src"/>
-	<classpathentry kind="src" path="simplechat1/src"/>
-	<classpathentry kind="lib" path="simplechat1/jar/mysql-connector-java-5.1.46.jar"/>
-	<classpathentry kind="lib" path="simplechat1/jar/javax.mail.jar"/>
-	<classpathentry kind="output" path="OCSF/bin"/>
-</classpath>
